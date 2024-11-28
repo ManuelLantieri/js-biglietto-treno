@@ -12,10 +12,11 @@ const chilometri = Number(prompt("Salve indicare il quantitativo di chilometri p
 // chiedo all'utente l'età del passeggero
 const età = Number(prompt("Inserire l'età del passeggero"))
 //  Verifico il prezzo del biglietto
-const prezzo = Number( chilometri * 0.21)
 //      -prezzo varia in base ai chilometri(motiplico il numero dei chilometri al prezzo/km)
+const prezzo = Number( chilometri * 0.21)
 //  Verifico eventuali sconti
 //      -SE età è inferiore a 18(escluso) allora il prezzo è scontato del 20%
+if 
 //          oppure
 //      -SE età è superiore a 65(incluso) allora il prezzo è scontato del 40%
 //      -ALTRIMENTI SE etàcompresa tra 18 (incluso) a 65(escluso) non viene applicato nessuno sconto

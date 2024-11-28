@@ -22,12 +22,13 @@ const prezzoMinorenni = Number(prezzo - scontoMinorenni)
 const scontoAnziani = ((prezzo / 100) * 40 )
 const prezzoAnziani = Number(prezzo - scontoAnziani)
 // SE età inferiore a 18(escluso) allora il prezzo sarà scontato del 20%
+//      -ALTRIMENTI SE etàcompresa tra 18 (incluso) a 65(escluso) non viene applicato nessuno sconto
+//  prezzo finale da mostrare sarà espresso con massimo due decimali.
 if (età > 0 && età < 18) {
     alert(`grazie allo sconto del 20% per minorenni il prezzo del suo biglietto è di: ${prezzoMinorenni.toFixed(2)}€`)
 } else if (età >= 65 && età < 100) {
     alert(`grazie allo sconto del 40% per anziani il prezzo del suo biglietto è di: ${prezzoAnziani.toFixed(2)}€`)
 } else {
-    alert(prezzo)
+    alert(`il prezzo del suo biglietto è di ${prezzo}€`)
 }
-//      -ALTRIMENTI SE etàcompresa tra 18 (incluso) a 65(escluso) non viene applicato nessuno sconto
-//  prezzo finale da mostrare sarà espresso con massimo due decimali.
+alert("buon viaggio!!")
